@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header section */
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: whitesmoke;
+}
+
+ul, .nav-icon{
+    justify-self: end;
+}
+
+.logo img{
+    max-width: 80px;
+    height: auto;
+}
+input[type=search]{
+    width: 70%;
+    padding: 5px 5px;
+    outline: none;
+    border: none;
+}
+div.search{
+    display: flex;
+    justify-content: center;
+}
+div.search i{
+    color: purple;
+    padding-top: 7px;
+    padding-left: 10px;
+}
+.navmenu{
+    display: flex;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.navmenu a{
+    color: purple;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    color: black;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: purple;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: purple;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cart-page{
+    margin: 30px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info img{
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: purple;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: red;
+    font-size: 12px;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid purple;
+    width: 100%;
+    max-width: 350px;
+}
+
+.small-container{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    /* border: solid red; */
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+.cart-info p{
+    display: none;
+}
+
+
+
+
+
+
+.cart h5{
+    color: gray;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.cart h2{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cart p{
+    color: gray;
+    font-size: 15px;
+    max-width: 380px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+.cart h6{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact{
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;    
+}
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+
+.first-info{
+    width: 140px;
+    height: auto;
+}
+
+.contact-info h4{
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.contact-info p:hover{
+    color: red;
+}
+
+.social-icon i{
+    color: gray;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+
+.end-text{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.end-text p{
+    color: black;
+    text-transform: capitalize;
+}
+table a{
+    width: 500px;
+}
+button{
+    width: 400px;
+    margin-left: 50px;
+    padding: 10px 20px;
+    color: white;
+    background-color: purple;
+    cursor: pointer;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgba(230, 5, 230, 0.863);
+}
+
+
+
+/* footer section */
+.contact{
+    background-color: black;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 50px;    
+}
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+
+.first-info{
+    width: 140px;
+    height: auto;
+}
+
+.contact-info h4{
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.contact-info p:hover{
+    color: red;
+}
+
+.social-icon i{
+    color: gray;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+
+
+
+
+/* copy right section */
+.end-text{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.end-text p{
+    color: white;
+    text-transform: capitalize;
+}
+ @media screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .cart-info p{
+        display: none;
+    }
+ }
